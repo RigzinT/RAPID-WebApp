@@ -1,0 +1,19 @@
+{
+  "name": "rapidwebapp",
+  "version": "1.0.0",
+  "main": "myApp.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node myApp.js",
+    "dev": "nodemon myApp.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.1",
+    "nodemon": "^2.0.12"
+  }
+}
