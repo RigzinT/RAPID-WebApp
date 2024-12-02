@@ -119,7 +119,7 @@ app.get('/add', (req, res) => {
 // Export the app and server separately
 const server = http.createServer(app);
 server.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
+    //console.log(`Server is running on http://localhost:${port}`);
 });
 
 export { app, server };
