@@ -3,7 +3,7 @@ name: Run Tests
 on:
   push:
     branches:
-      - main # Change to your branch name if different
+      - master # Change to your branch name if different
 
 jobs:
   test:
