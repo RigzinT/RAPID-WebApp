@@ -3,7 +3,7 @@ name: Run Tests
 on:
   push:
     branches:
-      - master # Change to your branch name if different
+      - master # on push to master branch only
 
 jobs:
   test:
@@ -24,8 +24,6 @@ jobs:
     - name: Run tests with Jest and detect open handles
       run: |
         npm test -- --detectOpenHandles
-        # Add --forceExit if necessary, but use as a last resort:
-        # npm test -- --detectOpenHandles --forceExit
 
     - name: Set GitHub Commit Status to Success
       if: success()
