@@ -3,7 +3,7 @@ const app = express();
 const port = 4000;
 
 app.get('/', (req, res) => {
-    res.send('This is POC for the RAPID Web Application');
+    res.send('This is POC for the RAPID Web Application. Changed to test webhook');
 });
 
 app.listen(port, () => {
