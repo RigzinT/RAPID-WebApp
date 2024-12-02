@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
         <!DOCTYPE html>
         <html lang="en">
         <head>
-            <title>Addition App</title>
+            <title>RAPID web app</title>
         </head>
         <body>
             <h1>Simple Addition App</h1>
