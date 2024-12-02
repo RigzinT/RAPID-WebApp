@@ -14,12 +14,12 @@ app.get('/', (req, res) => {
             <title>RAPID web app is here!!!</title>
         </head>
         <body>
-            <h1>Arvo app test with automation</h1>
+            <h1>Arvo RAPID Web App</h1>
             <form id="additionForm" action="/add" method="GET">
-                <label for="num1">Number 1 (can be a decimal):</label>
+                <label for="num1">Number 1:</label>
                 <input type="number" step="any" id="num1" name="num1" required>
                 <br><br>
-                <label for="num2">Number 2 (can be a decimal):</label>
+                <label for="num2">Number 2:</label>
                 <input type="number" step="any" id="num2" name="num2" required>
                 <br><br>
                 <button type="submit">Add</button>
@@ -55,10 +55,6 @@ app.get('/add', (req, res) => {
     `);
 });
 
-// app.listen(port, () => {
-//     console.log(`Server is running on http://localhost:${port}`);
-// });
-
 // Only start the server if not in test environment
 if (process.env.NODE_ENV !== 'test') {
     const server = http.createServer(app);
@@ -67,4 +63,4 @@ if (process.env.NODE_ENV !== 'test') {
     });
 }
 
-export default app; // Ensure the app is exported correctly for testing
+export default app;
