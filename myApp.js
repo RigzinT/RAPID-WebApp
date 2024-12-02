@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
             <title>RAPID web app is here!!!</title>
         </head>
         <body>
-            <h1>Arvo app test</h1>
+            <h1>Arvo app test with automation</h1>
             <form id="additionForm" action="/add" method="GET">
                 <label for="num1">Number 1 (can be a decimal):</label>
                 <input type="number" step="any" id="num1" name="num1" required>
