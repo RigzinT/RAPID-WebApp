@@ -4,7 +4,7 @@ import express from 'express';
 const app = express();
 const port = 4000;
 
-// Serve static HTML for the form
+// Serve static HTML for the app
 app.get('/', (req, res) => {
     res.send(`
         <!DOCTYPE html>
