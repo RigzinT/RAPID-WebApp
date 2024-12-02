@@ -2,7 +2,7 @@
 import request from 'supertest';
 import app from './myApp'; // Import the app from myApp.js
 
-describe('Addition API', () => {
+describe('Addition API Test Case', () => {
     it('should add two numbers correctly (integers)', async () => {
         const response = await request(app).get('/add?num1=5&num2=10');
         expect(response.status).toBe(200);
