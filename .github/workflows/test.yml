@@ -19,10 +19,13 @@ jobs:
         node-version: '18'
 
     - name: Install dependencies
-      run: npm install --save-dev jest supertest
+      run: npm install
 
-    - name: Run tests
-      run: npm test
+    - name: Run tests with Jest and detect open handles
+      run: |
+        npm test -- --detectOpenHandles
+        # Add --forceExit if necessary, but use as a last resort:
+        # npm test -- --detectOpenHandles --forceExit
 
     - name: Set GitHub Commit Status to Success
       if: success()
