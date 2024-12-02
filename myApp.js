@@ -54,8 +54,8 @@ app.get('/add', (req, res) => {
     `);
 });
 
-app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
-});
+// app.listen(port, () => {
+//     console.log(`Server is running on http://localhost:${port}`);
+// });
 
 export default app; // Ensure the app is exported correctly for testing
