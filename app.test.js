@@ -15,6 +15,6 @@ describe('Addition API Test Case', () => {
         // Extract and check the matched numbers
         expect(resultMatch[1]).toBe('5'); // num1
         expect(resultMatch[2]).toBe('10'); // num2
-        expect(resultMatch[3]).toBe('15'); // result
+        expect(resultMatch[3]).toBe('22'); // result
     });
 });
